@@ -1,0 +1,2 @@
+class AdvocatesController < ApplicationController
+end
