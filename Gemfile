@@ -37,4 +37,6 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'pry-rails', :group => :development
+gem 'rails_12factor', group: :production
 
