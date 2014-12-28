@@ -6,7 +6,6 @@ class CreateOpportunities < ActiveRecord::Migration
       t.string  :website
       t.string  :career_page
       t.text  :notes
-      t.belongs_to  :advocate
       t.belongs_to  :cto
       t.boolean :applied?, default: false
       t.boolean :offer?, default: false
