@@ -1,7 +1,7 @@
 class CreateActions < ActiveRecord::Migration
   def change
     create_table :actions do |t|
-      t.integer :advocate_id
+      t.belongs_to :advocate_id
       t.date  :meeting_date
       t.date  :reached_out
       t.date  :followed_up
