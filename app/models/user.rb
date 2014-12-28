@@ -1,4 +1,4 @@
 class User < ActiveRecord::Base
-  has_many  :jobs
+  has_many  :opportunities
   has_secure_password
 end
