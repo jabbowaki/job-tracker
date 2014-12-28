@@ -1,10 +1,12 @@
 class CreateActions < ActiveRecord::Migration
   def change
     create_table :actions do |t|
-      t.belongs_to :advocate_id
+      t.string  :description
+      t.belongs_to  :opportunity
+      t.belongs_to :advocate
       t.date  :meeting_date
       t.date  :reached_out
-      t.date  :followed_up
+      t.date  :follow_up
       t.text  :notes
 
       t.timestamps
