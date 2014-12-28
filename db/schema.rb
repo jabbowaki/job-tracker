@@ -11,9 +11,67 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20141228042354) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "actions", force: true do |t|
+    t.string   "description"
+    t.integer  "opportunity_id"
+    t.integer  "advocate_id"
+    t.date     "meeting_date"
+    t.date     "reached_out"
+    t.date     "follow_up"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "advocates", force: true do |t|
+    t.string   "name"
+    t.string   "twitter"
+    t.string   "blog"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "connections", force: true do |t|
+    t.integer  "opportunity_id"
+    t.integer  "advocate_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ctos", force: true do |t|
+    t.string   "name"
+    t.string   "twitter"
+    t.string   "blog"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "opportunities", force: true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.string   "website"
+    t.string   "career_page"
+    t.text     "notes"
+    t.integer  "cto_id"
+    t.boolean  "applied?",    default: false
+    t.boolean  "offer?",      default: false
+    t.boolean  "open_job?",   default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
