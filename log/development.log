@@ -648,3 +648,507 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 13:59:29
 
 
 Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-28 13:59:29 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-28 20:09:43 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 694ms (Views: 681.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/opportunities.css?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/ctos.css?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/advocates.css?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/advocates.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/ctos.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/opportunities.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/advocates.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/ctos.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/opportunities.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 20:09:44 -0600
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-28 20:10:16 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jBkTE4LDxAzmFdz3MFbuwuGB0wzQ4Xyj2ERxjHfAFGc=", "user"=>{"email"=>"emily.owaki@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+Unpermitted parameters: password
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 83ms
+
+ActionView::MissingTemplate (Missing template users/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emilyowaki/Desktop/job-tracker/app/views"
+):
+  app/controllers/users_controller.rb:15:in `create'
+
+
+  Rendered /Users/emilyowaki/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-28 20:18:28 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (64.4ms)
+Completed 200 OK in 1516ms (Views: 1505.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/advocates.css?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/opportunities.css?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/ctos.css?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/advocates.js?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/ctos.js?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/opportunities.js?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 20:18:30 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-28 20:21:47 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (64.3ms)
+Completed 200 OK in 1360ms (Views: 1346.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started GET "/assets/advocates.css?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started GET "/assets/opportunities.css?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started GET "/assets/ctos.css?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started GET "/assets/advocates.js?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started GET "/assets/ctos.js?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started GET "/assets/opportunities.js?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 20:21:49 -0600
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-28 20:22:01 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jBkTE4LDxAzmFdz3MFbuwuGB0wzQ4Xyj2ERxjHfAFGc=", "user"=>{"email"=>"emily@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 111ms
+
+ActionView::MissingTemplate (Missing template users/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/emilyowaki/Desktop/job-tracker/app/views"
+):
+  app/controllers/users_controller.rb:15:in `create'
+
+
+  Rendered /Users/emilyowaki/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (55.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-28 20:23:07 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jBkTE4LDxAzmFdz3MFbuwuGB0wzQ4Xyj2ERxjHfAFGc=", "user"=>{"email"=>"emily@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered users/new.html within layouts/application (0.4ms)
+Completed 200 OK in 146ms (Views: 56.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started GET "/assets/ctos.css?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started GET "/assets/opportunities.css?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started GET "/assets/advocates.css?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started GET "/assets/advocates.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started GET "/assets/ctos.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started GET "/assets/opportunities.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:08 -0600
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jBkTE4LDxAzmFdz3MFbuwuGB0wzQ4Xyj2ERxjHfAFGc=", "user"=>{"email"=>"emily@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered users/new.html within layouts/application (1.7ms)
+Completed 200 OK in 208ms (Views: 124.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/advocates.css?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started GET "/assets/ctos.css?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started GET "/assets/opportunities.css?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started GET "/assets/advocates.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started GET "/assets/ctos.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started GET "/assets/opportunities.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 20:23:50 -0600
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jBkTE4LDxAzmFdz3MFbuwuGB0wzQ4Xyj2ERxjHfAFGc=", "user"=>{"email"=>"emily@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered users/new.html within layouts/application (0.6ms)
+Completed 200 OK in 142ms (Views: 53.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started GET "/assets/opportunities.css?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started GET "/assets/advocates.css?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started GET "/assets/ctos.css?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started GET "/assets/advocates.js?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started GET "/assets/ctos.js?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started GET "/assets/opportunities.js?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 20:24:03 -0600
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-28 20:24:21 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jBkTE4LDxAzmFdz3MFbuwuGB0wzQ4Xyj2ERxjHfAFGc=", "user"=>{"email"=>"emily@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered users/new.html within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 91ms
+
+SyntaxError (/Users/emilyowaki/Desktop/job-tracker/app/views/users/new.html:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+...pend=( link_to "Home" root_path);@output_buffer.to_s
+...                               ^):
+  app/views/users/new.html:2: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/controllers/users_controller.rb:15:in `create'
+
+
+  Rendered /Users/emilyowaki/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/emilyowaki/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (57.6ms)
+  Rendered /Users/emilyowaki/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/emilyowaki/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (78.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jBkTE4LDxAzmFdz3MFbuwuGB0wzQ4Xyj2ERxjHfAFGc=", "user"=>{"email"=>"emily@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered users/new.html within layouts/application (0.8ms)
+Completed 200 OK in 156ms (Views: 62.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/assets/ctos.css?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/assets/opportunities.css?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/assets/advocates.css?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/assets/advocates.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/assets/ctos.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/assets/opportunities.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:07 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-28 20:25:09 -0600
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 128ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actions.css?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
+
+
+Started GET "/assets/advocates.css?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
+
+
+Started GET "/assets/ctos.css?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
+
+
+Started GET "/assets/opportunities.css?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
+
+
+Started GET "/assets/actions.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
+
+
+Started GET "/assets/advocates.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
+
+
+Started GET "/assets/ctos.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
+
+
+Started GET "/assets/opportunities.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 20:25:10 -0600
