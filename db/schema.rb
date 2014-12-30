@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 20141228042354) do
 
   create_table "ctos", force: true do |t|
     t.string   "name"
+    t.string   "email"
     t.string   "twitter"
     t.string   "blog"
     t.datetime "created_at"
