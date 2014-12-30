@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :users
+  resources :sessions
   resources :opportunities do
     resources :ctos
   end

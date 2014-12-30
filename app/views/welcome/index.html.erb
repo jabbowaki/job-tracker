@@ -1,5 +1,5 @@
 <h1>Hello World</h1>
-
+<h3>Sign Up</h3>
 <%= form_for :user, url: users_path do |f| %>
 <%= flash[:error] %>
 <br>
@@ -9,4 +9,14 @@
 <%= f.label :password %><br>
 <%= f.text_field :password %><br>
 <%= f.submit 'Sign Up'%>
+<% end %>
+
+<h3>Login</h3>
+<%= form_for :session, url: sessions_path do |f| %>
+  <% if @error_message %>
+    <p><%= @error_message%></p>
+  <% end %>
+  <%= f.text_field :email, placeholder: "email" %><br>
+  <%= f.password_field :password, placeholder: "password" %><br>
+  <%= f.submit 'Login' %>
 <% end %>
