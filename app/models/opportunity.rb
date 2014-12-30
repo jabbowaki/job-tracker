@@ -1,4 +1,7 @@
 class Opportunity < ActiveRecord::Base
+  validates  :user, :name, :website, presence: true
+  validates :name, uniqueness: true
+
   belongs_to :user
   belongs_to  :cto
   has_many  :actions
