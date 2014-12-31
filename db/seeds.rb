@@ -35,14 +35,6 @@ action2 = Action.create!(description: "Phone Interview",
                           follow_up: "2014-12-26",
                           notes: "Don't mess this up")
 
-action3 = Action.create!(description: "Phone Interview",
-                          opportunity: devmynd,
-                          advocate: sasha,
-                          meeting_date: "2015-1-10",
-                          reached_out: "2014-12-31",
-                          follow_up: "2014-12-26",
-                          notes: "Don't mess this up")
-
 action4 = Action.create!(description: "Coffee date",
                           opportunity: fakeropp,
                           advocate: fakeradvocate,
