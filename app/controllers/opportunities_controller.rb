@@ -1,7 +1,7 @@
 class OpportunitiesController < ApplicationController
 
   def index
-    @user = User.find(session[:user_id])
+    @user = current_user
     @opportunities = @user.opportunities
   end
 
