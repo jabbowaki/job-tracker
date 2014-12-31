@@ -10,7 +10,7 @@ emily = User.create!(first_name: "Emily", last_name:"Owaki", email: "emily.owaki
 
 devmynd = Opportunity.create!(user: emily, name: "DevMynd", website: "https://www.devmynd.com/",career_page:"https://www.devmynd.com/jobs/apprenticeship")
 
-sasha = Advocate.create!(name: "Sasha", twitter: "SassyGrody")
+sasha = Advocate.create!(name: "Sasha", email: "sasha@gmail.com", twitter: "SassyGrody")
 
 connect1 = Connection.create!(opportunity: devmynd, advocate: sasha)
 
