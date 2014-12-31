@@ -6,10 +6,12 @@ class SessionsController < ApplicationController
       redirect_to user_path(@user)
     else
       @error_message = "Invalid email or password"
-      render "sessions/new"
+      render "welcome/index"
     end
   end
 
   def destroy
+    session.clear
+    redirect_to root_path
   end
 end

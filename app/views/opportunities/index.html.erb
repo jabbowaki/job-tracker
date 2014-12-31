@@ -2,3 +2,5 @@
 <%@opportunities.each do |opportunity| %>
   <%= link_to opportunity.name, opportunity%>
 <%end%>
+
+<%= link_to "Logout", session_path(@user), method: :delete %>

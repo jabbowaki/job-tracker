@@ -8,14 +8,14 @@ class UsersController < ApplicationController
       redirect_to root_url
     else
       flash.now[:error] = "Could not signup.  Please fill in all fields"
-      render 'new'
+      render 'welcome/index'
     end
   end
 
   private
 
     def user_params
-      params.require(:user).permit(:email, :password)
+      params.require(:user).permit(:first_name, :last_name, :email, :password)
     end
 
 end
