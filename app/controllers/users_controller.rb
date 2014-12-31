@@ -8,7 +8,7 @@ class UsersController < ApplicationController
       redirect_to root_url
     else
       flash.now[:error] = "Could not signup.  Please fill in all fields"
-      render 'new'
+      render 'welcome/index'
     end
   end
 

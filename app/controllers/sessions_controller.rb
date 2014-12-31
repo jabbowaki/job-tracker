@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
       redirect_to user_path(@user)
     else
       @error_message = "Invalid email or password"
-      render "sessions/new"
+      render "welcome/index"
     end
   end
 
