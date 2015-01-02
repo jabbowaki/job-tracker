@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
     @user = User.find_by(email: params[:session][:email])
     if @user && @user.authenticate(params[:session][:password])
       session[:user_id] = @user.id
-      redirect_to user_path(@user)
+      redirect_to opportunities_path
     else
       @error_message = "Invalid email or password"
       render "welcome/index"
