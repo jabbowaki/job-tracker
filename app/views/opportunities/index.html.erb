@@ -1,6 +1,8 @@
 <h1>Opportunities</h1>
 <%@opportunities.each do |opportunity| %>
-  <%= link_to opportunity.name, opportunity%>
+  <%= link_to opportunity.name, opportunity%><br>
 <%end%>
+
+<%= link_to 'New Opportunity', new_opportunity_path %><br>
 
 <%= link_to "Logout", session_path(@user), method: :delete %>

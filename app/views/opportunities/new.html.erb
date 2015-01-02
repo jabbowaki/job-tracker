@@ -1,0 +1,9 @@
+<h3>New Opportunity</h3>
+
+<%= form_for :opportunities, url: opportunities_path, method: :post do |f| %>
+<%= f.text_field :name, placeholder: "Name"%><br>
+<%= f.text_field :website, placeholder: "Website"%><br>
+<%= f.text_field :career_page, placeholder: "Career Page"%><br>
+<%= f.text_field :notes, placeholder: "Notes" %><br>
+<%= f.submit "Submit" %><br>
+<% end %>
