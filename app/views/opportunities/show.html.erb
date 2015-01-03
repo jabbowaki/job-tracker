@@ -16,4 +16,6 @@ Notes: <%=@opportunity.notes%>
   <p>Notes: <%=action.notes%></p>
 <%end%>
 
+
+<%= link_to 'New Action', new_opportunity_action_path(@opportunity) %><br>
 <%= link_to 'Home', opportunities_path %>
