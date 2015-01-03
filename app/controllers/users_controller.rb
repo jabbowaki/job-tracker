@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
     if @user.save
       session[:user_id] = @user.id
-      redirect_to root_url
+      redirect_to opportunities_path
     else
       flash.now[:error] = "Could not signup.  Please fill in all fields"
       render 'welcome/index'
