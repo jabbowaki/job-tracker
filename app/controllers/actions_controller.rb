@@ -20,7 +20,7 @@ class ActionsController < ApplicationController
 
   private
     def actions_params
-      params.require(:actions).permit(:description, :meeting_date)
+      params.require(:actions).permit(:description, :meeting_date, :follow_up, :notes)
     end
 
 end
