@@ -5,6 +5,7 @@
 <%= f.date_field :meeting_date, placeholder: "When?"%><br>
 <%= f.date_field :follow_up, placeholder: "Follow up on"%><br>
 <%= f.text_field :notes, placeholder: "Notes" %><br>
+<%= f.select :advocates, @advocates_array, :prompt => 'With who?' %><br>
 <%= f.submit "Submit" %><br>
 <% end %>
 

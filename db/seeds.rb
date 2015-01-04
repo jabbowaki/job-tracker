@@ -12,10 +12,11 @@ devmynd = Opportunity.create!(user: emily, name: "DevMynd", website: "https://ww
 
 fakeropp = Opportunity.create!(user: emily, name: "faker job", website: "https://www.fakerjob.com/",career_page:"https://www.fakerjob.com/jobs")
 
-sasha = Advocate.create!(name: "Sasha", email: "sasha@gmail.com", twitter: "SassyGrody")
+sasha = Advocate.create!(name: "Sasha", email: "sasha@gmail.com", twitter: "SassyGrody", opportunity: devmynd)
 
-fakeradvocate = Advocate.create!(name: "faker name", email: "email@gmail.com", twitter: "twitter_name")
+fakeradvocate = Advocate.create!(name: "faker name", email: "email@gmail.com", twitter: "twitter_name", opportunity: fakeropp)
 
+fakeradvocate1 = Advocate.create!(name: "ewfw name", email: "gmail@gmail.com", twitter: "twitter_name_other", opportunity: fakeropp)
 
 action1 = Action.create!(description: "Coffee date",
                           opportunity: devmynd,
