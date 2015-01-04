@@ -2,6 +2,8 @@ class ActionsController < ApplicationController
 
   def new
     @action = Action.new
+    @opportunity = Opportunity.find(params[:opportunity_id])
+    @advocates = @opportunity.advocates
   end
 
   def show
