@@ -9,9 +9,8 @@ Notes: <%=@opportunity.notes%>
 
 <h1>Actions</h1>
 <%@actions.each do |action|%>
-  <%advocate = Advocate.find(action.advocate_id)%>
-  <%=action.description%>
-  <p>With: <%=advocate.name%></p>
+  <h4><%=action.description%></h4>
+  <p>With: <%= action.advocate.name %></p>
   <p>When: <%=action.meeting_date%> </p>
   <p>Notes: <%=action.notes%></p>
 <%end%>
