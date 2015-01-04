@@ -16,8 +16,6 @@ sasha = Advocate.create!(name: "Sasha", email: "sasha@gmail.com", twitter: "Sass
 
 fakeradvocate = Advocate.create!(name: "faker name", email: "email@gmail.com", twitter: "twitter_name")
 
-connect1 = Connection.create!(opportunity: devmynd, advocate: sasha)
-connect2 = Connection.create!(opportunity: fakeropp, advocate: fakeradvocate)
 
 action1 = Action.create!(description: "Coffee date",
                           opportunity: devmynd,
