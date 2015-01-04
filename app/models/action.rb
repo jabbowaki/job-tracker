@@ -4,4 +4,6 @@ class Action < ActiveRecord::Base
 
   belongs_to  :advocate
   belongs_to  :opportunity
+
+  scope :recent, -> { order("updated_at desc").limit(2)}
 end
