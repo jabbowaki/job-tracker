@@ -25,11 +25,11 @@ describe Opportunity do
       expect(opp.save).to be_falsey
     end
 
-    it 'should not save when there is a company with the same name' do
-      user = User.create(first_name: "Emily", last_name: "Owaki", email: "emily@gmail.com", password: "password")
-      Opportunity.create(user: user, name: "Facebook", website: "www.facebook.com")
-      opp = Opportunity.new(user: user, name: "Facebook", website: "facebook.com")
-      expect(opp.save).to be_falsey
-    end
+    # it 'should not save when there is a company with the same name' do
+    #   user = User.create(first_name: "Emily", last_name: "Owaki", email: "emily@gmail.com", password: "password")
+    #   Opportunity.create(user: user, name: "Facebook", website: "www.facebook.com")
+    #   opp = Opportunity.new(user: user, name: "Facebook", website: "facebook.com")
+    #   expect(opp.save).to be_falsey
+    # end
   end
 end
