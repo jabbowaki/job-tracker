@@ -10,13 +10,17 @@ class ActionsController < ApplicationController
   def create
     @user = current_user
     @opportunity = Opportunity.find(params[:opportunity_id])
-    @action = @opportunity.actions.new(params[:actions])
+    @action = @opportunity.actions.new(actions_params)
     if @action.save
-      redirect_to actions_path
+      redirect_to opportunity_path(@opportunity)
     else
       render 'new'
     end
   end
 
+  private
+    def actions_params
+      params.require(:actions).permit(:description, :meeting_date)
+    end
 
 end
