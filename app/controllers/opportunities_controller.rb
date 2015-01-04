@@ -3,6 +3,8 @@ class OpportunitiesController < ApplicationController
   def index
     @user = current_user
     @opportunities = @user.opportunities
+    #after adding association, should be Action.find_by(user: current_user).recent
+    @actions = Action.recent
   end
 
   def new
