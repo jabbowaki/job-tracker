@@ -4,5 +4,12 @@
 <%end%>
 
 <%= link_to 'New Opportunity', new_opportunity_path %><br>
+<!-- Currently this prints everyones actions mixed in. Obviously a problem -->
+<h1>Recent Activity</h1>
+<% @actions.each do |action| %>
+  <%= action.description %><br>
+  <%= action.notes %><br><br>
+  <% end %>
+
 
 <%= link_to "Logout", session_path(@user), method: :delete %>
