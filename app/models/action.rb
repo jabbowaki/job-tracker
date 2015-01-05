@@ -5,5 +5,5 @@ class Action < ActiveRecord::Base
   belongs_to  :advocate
   belongs_to  :opportunity
 
-  scope :recent, -> { order("updated_at desc").limit(5)}
+  scope :recent, -> { order("meeting_date desc").limit(5)}
 end
