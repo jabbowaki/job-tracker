@@ -4,6 +4,7 @@ class OpportunitiesController < ApplicationController
     @user = current_user
     @opportunities = @user.opportunities
     @actions = Action.recent
+    @upcoming_actions = Action.upcoming
   end
 
   def new
