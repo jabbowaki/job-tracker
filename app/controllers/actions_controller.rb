@@ -3,7 +3,11 @@ class ActionsController < ApplicationController
   def new
     @action = Action.new
     @opportunity = Opportunity.find(params[:opportunity_id])
-    @advocates = @opportunity.advocates
+    @advocates_array = []
+    @opportunity.advocates.each do |advocate|
+      @advocates_array << advocate.name
+    end
+    @advocates_array
   end
 
   def show
