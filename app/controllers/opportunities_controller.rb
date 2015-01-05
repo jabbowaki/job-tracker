@@ -3,7 +3,6 @@ class OpportunitiesController < ApplicationController
   def index
     @user = current_user
     @opportunities = @user.opportunities
-    #after adding association, should be Action.find_by(user: current_user).recent
     @actions = Action.recent
   end
 
@@ -23,6 +22,7 @@ class OpportunitiesController < ApplicationController
   def show
     @opportunity = Opportunity.find(params[:id])
     @actions = @opportunity.actions
+    @advocates = @opportunity.advocates
   end
 
   private

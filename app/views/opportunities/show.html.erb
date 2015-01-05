@@ -6,6 +6,12 @@ Job Site: <%= link_to @opportunity.career_page %>
 <br>
 Notes: <%=@opportunity.notes%>
 
+<h1>Advocates</h1>
+<% @advocates.each do |advocate| %>
+  <h4><%=advocate.name%></h4>
+<% end %>
+<%= link_to 'Add new Advocate', new_opportunity_advocate_path(@opportunity)%>
+
 
 <h1>Actions</h1>
 <%@actions.each do |action|%>
