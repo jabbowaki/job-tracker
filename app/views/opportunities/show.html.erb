@@ -6,6 +6,15 @@ Job Site: <%= link_to @opportunity.career_page %>
 <br>
 Notes: <%=@opportunity.notes%>
 
+<h1>Advocates</h1>
+<% @advocates.each do |advocate| %>
+  <h4><%=advocate.name%></h4>
+  <%= advocate.email%><br>
+    <%= link_to advocate.twitter, "https://www.twitter.com/" + advocate.twitter %>
+    <%= link_to advocate.blog %><br>
+<% end %>
+<%= link_to 'Add new Advocate', new_opportunity_advocate_path(@opportunity)%>
+
 
 <h1>Actions</h1>
 <%@actions.each do |action|%>
