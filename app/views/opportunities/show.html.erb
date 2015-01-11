@@ -19,7 +19,7 @@ Notes: <%=@opportunity.notes%>
 <h1>Actions</h1>
 <%@actions.each do |action|%>
   <h4><%=action.description%></h4>
-  <p>With: <%= action.advocate.name %></p>
+  <p>With: <%= action.advocate %></p>
   <p>When: <%=action.meeting_date%> </p>
   <p>Notes: <%=action.notes%></p>
 <%end%>

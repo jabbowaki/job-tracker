@@ -6,7 +6,10 @@
 <%= f.date_field :follow_up, placeholder: "Follow up on"%><br>
 <%= f.text_field :notes, placeholder: "Notes" %><br>
 <%= f.select :advocates, @advocates_array, :prompt => 'With who?' %><br>
+
 <%= f.submit "Submit" %><br>
 <% end %>
 
 <!-- This is just a start on the form. We will also need to add the advocate which will be done in the controller I guess. We will have to allow the user to pick from a list of connections connected to this opportunity. -->
+<!--
+There is an issue with the way the drop down is adding the advocate. it's not saving the advocate object. I will need to look it up -->
