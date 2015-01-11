@@ -5,7 +5,7 @@ class ActionsController < ApplicationController
     @opportunity = Opportunity.find(params[:opportunity_id])
     @advocates_array = []
     @opportunity.advocates.each do |advocate|
-      @advocates_array << advocate.name
+      @advocates_array << advocate
     end
     @advocates_array
   end
