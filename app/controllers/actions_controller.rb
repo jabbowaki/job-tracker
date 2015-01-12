@@ -5,7 +5,7 @@ class ActionsController < ApplicationController
     @opportunity = Opportunity.find(params[:opportunity_id])
     @advocates_array = []
     @opportunity.advocates.each do |advocate|
-      @advocates_array << advocate
+      @advocates_array << advocate.name
     end
     @advocates_array
   end
@@ -17,6 +17,7 @@ class ActionsController < ApplicationController
     @user = current_user
     @opportunity = Opportunity.find(params[:opportunity_id])
     @action = @opportunity.actions.new(actions_params)
+    @action.advocate = @opportunity.advocates.find_by(name:params[:actions][:advocates])
     if @action.save
       redirect_to opportunity_path(@opportunity)
     else
