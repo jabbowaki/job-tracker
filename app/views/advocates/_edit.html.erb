@@ -1,0 +1,7 @@
+<%= form_for :advocate, url:opportunity_advocate_path(@opportunity, @advocate), method: :put do |f| %>
+  <%= f.text_field :name, placeholder: "Name" %><br>
+  <%= f.email_field :email, placeholder: "Email" %><br>
+  <%= f.text_field :twitter, placeholder: "Twitter Handle" %><br>
+  <%= f.text_field :blog, placeholder: "Blog" %><br>
+  <%= f.submit "Submit" %>
+  <% end %>
