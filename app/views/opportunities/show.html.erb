@@ -11,7 +11,10 @@ Notes: <%=@opportunity.notes%>
   <h4><%=advocate.name%></h4>
   <%= advocate.email%><br>
     <%= link_to advocate.twitter, "https://www.twitter.com/" + advocate.twitter %>
-    <%= link_to advocate.blog %><br>
+    <% if advocate.blog %>
+      <%= link_to 'Blog', advocate.blog %><br>
+    <% end%><br>
+    <%= link_to 'Update', edit_opportunity_advocate_path(@opportunity, advocate) %>
 <% end %>
 <%= link_to 'Add new Advocate', new_opportunity_advocate_path(@opportunity)%>
 
@@ -19,7 +22,7 @@ Notes: <%=@opportunity.notes%>
 <h1>Actions</h1>
 <%@actions.each do |action|%>
   <h4><%=action.description%></h4>
-  <p>With: <%= action.advocate %></p>
+  <p>With: <%= action.advocate.name %></p>
   <p>When: <%=action.meeting_date%> </p>
   <p>Notes: <%=action.notes%></p>
 <%end%>
