@@ -18,7 +18,6 @@ class ActionsController < ApplicationController
     @opportunity = Opportunity.find(params[:opportunity_id])
     @action = @opportunity.actions.new(actions_params)
     @action.advocate = @opportunity.advocates.find_by(name:params[:actions][:advocates])
-    binding.pry
     if @action.save
       redirect_to opportunity_path(@opportunity)
     else
