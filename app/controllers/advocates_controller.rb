@@ -14,7 +14,19 @@ class AdvocatesController < ApplicationController
     end
   end
 
+  def edit
+    @opportunity = Opportunity.find(params[:opportunity_id])
+    @advocate = Advocate.find(params[:id])
+  end
+
   def update
+    @advocate = Advocate.find(params[:id])
+    @advocate.attributes = {name: params[:advocate][:name], email: params[:advocate][:email], twitter: params[:advocate][:twitter], blog: params[:advocate][:blog]}
+    if @advocate.save
+      redirect_to opportunity_path
+    else
+      render 'edit'
+    end
   end
 
   def destroy

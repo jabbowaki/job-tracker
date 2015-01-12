@@ -14,7 +14,7 @@ Notes: <%=@opportunity.notes%>
     <% if advocate.blog %>
       <%= link_to 'Blog', advocate.blog %><br>
     <% end%><br>
-    <%= link_to 'Update', opportunity_advocate_path(@opportunity, advocate) %>
+    <%= link_to 'Update', edit_opportunity_advocate_path(@opportunity, advocate) %>
 <% end %>
 <%= link_to 'Add new Advocate', new_opportunity_advocate_path(@opportunity)%>
 
