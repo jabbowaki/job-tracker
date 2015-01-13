@@ -29,8 +29,9 @@ class ActionsController < ApplicationController
   end
 
   def update
-    @action = @Action.find(params[:id])
-    @action.attributes = {description: params[:action][:description], meeting_date: params[:action][:meeting_date], follow_up: params[:action][:follow_up], notes: params[:action][:notes]}
+    @opportunity = Opportunity.find(params[:opportunity_id])
+    @action = Action.find(params[:id])
+    @action.attributes = {description: params[:actions][:description], meeting_date: params[:actions][:meeting_date], follow_up: params[:actions][:follow_up], notes: params[:actions][:notes]}
     if @action.save
       redirect_to opportunity_path(@opportunity)
     else
