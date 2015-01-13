@@ -1,0 +1,13 @@
+<h4>Edit your action</h4>
+<%= form_for :actions, url: opportunity_action_path, method: :put do |f| %>
+<%= f.label :what %>
+<%= f.text_field :description, placeholder: "What are you doing?"%><br>
+<%= f.label :when %>
+<%= f.date_field :meeting_date, placeholder: "When?"%><br>
+<%= f.label :follow_up %>
+<%= f.date_field :follow_up, placeholder: "Follow up on"%><br>
+<%= f.label :notes %>
+<%= f.text_field :notes, placeholder: "Notes" %><br>
+
+<%= f.submit "Submit" %><br>
+<% end %>
