@@ -25,6 +25,20 @@ class ActionsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    @action = @Action.find(params[:id])
+    @action.attributes = {description: params[:action][:description], meeting_date: params[:action][:meeting_date], follow_up: params[:action][:follow_up], notes: params[:action][:notes]}
+    if @action.save
+      redirect_to opportunity_path(@opportunity)
+    else
+      render 'edit'
+    end
+
+  end
+
   private
     def actions_params
       params.require(:actions).permit(:description, :meeting_date, :follow_up, :notes)
