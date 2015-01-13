@@ -27,6 +27,7 @@ Notes: <%=@opportunity.notes%>
   <% end %>
   <p>When: <%=action.meeting_date%> </p>
   <p>Notes: <%=action.notes%></p>
+  <%= link_to 'Edit', edit_opportunity_action_path(@opportunity, action)%>
 <%end%>
 
 
