@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
 
   def index
-    if session[:user_id]
+    if signed_in?
       redirect_to opportunities_path
     end
   end
