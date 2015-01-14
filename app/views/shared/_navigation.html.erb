@@ -1,7 +1,13 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <h2>Coffee Date</h2>
+      <h3>Coffee Date</h3>
     </div>
+    <ul class="nav navbar-nav navbar-right">
+      <% if session[:user_id] %>
+        <li><%= link_to 'Logout', session_path(@user), method: :delete %>
+      <% end %>
+    </ul>
+
   </div>
 </nav>
