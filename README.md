@@ -1,6 +1,6 @@
 Looking for a job is hard, and tracking where you are in your job hunt can be frustrating and tedious. Job Tracker was built to make at least part of the process easier.
 
-[Heroku App](https://infinite-caverns-1069.herokuapp.com)
+[Heroku App](https://coffeedate.herokuapp.com/)
 # Schema Design
 
 ![schema design](schema.png)
