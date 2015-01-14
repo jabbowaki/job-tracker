@@ -1,24 +1,16 @@
-<h3>Sign Up</h3>
-<%= form_for :user, url: users_path do |f| %>
-<%= flash[:error] %>
-<br>
-<%= f.label :first_name %> <br>
-<%= f.text_field :first_name %><br>
-<%= f.label :last_name %><br>
-<%= f.text_field :last_name %><br>
-<%= f.label :email %><br>
-<%= f.text_field :email %><br>
-<%= f.label :password %><br>
-<%= f.password_field :password %><br>
-<%= f.submit 'Sign Up'%>
-<% end %>
+<div class="jumbotron">
+  <h1>Track your job search</h1>
+  <p>Job hunting is hard. Monitoring your job hunting progress shouldn't be. Coffee Date is here to help.
+    <br><br>
+    <a class="btn btn-success btn-lg" href="#" role="button">Sign Up</a>
+    <a class="btn btn-success btn-lg" href="#" role="button">Sign In</a>
+  </p>
+</div>
 
+<div id="signup">
+<%= render partial: "signup"%>
+</div>
+
+<%= render partial: "signup"%>
 <h3>Login</h3>
-<%= form_for :session, url: sessions_path do |f| %>
-  <% if @error_message %>
-    <p><%= @error_message%></p>
-  <% end %>
-  <%= f.text_field :email, placeholder: "email" %><br>
-  <%= f.password_field :password, placeholder: "password" %><br>
-  <%= f.submit 'Login' %>
-<% end %>
+<%= render partial: "signin"%>
