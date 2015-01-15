@@ -23,6 +23,6 @@ $(document).ready(function(){
   });
   $('#signinbutton').on('click', function(){
     $('#signin').toggle();
-    $('#singinbutton').toggle();
+    $('#signinbutton').toggle();
   });
 })
