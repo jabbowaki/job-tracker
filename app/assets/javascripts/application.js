@@ -15,3 +15,14 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+$(document).ready(function(){
+  $('#signupbutton').on('click',function(){
+    $('#signup').toggle();
+    $('#signupbutton').toggle();
+  });
+  $('#signinbutton').on('click', function(){
+    $('#signin').toggle();
+    $('#signinbutton').toggle();
+  });
+})
