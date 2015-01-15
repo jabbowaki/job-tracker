@@ -2,14 +2,18 @@
   <h1>Track your job search</h1>
   <p>Job hunting is hard. Monitoring your job hunting progress shouldn't be. Coffee Date is here to help.
     <br><br>
-    <a class="btn btn-success btn-lg" href="#" role="button">Sign Up</a>
-    <a class="btn btn-success btn-lg" href="#" role="button">Sign In</a>
+    <a class="btn btn-success btn-lg" id="signupbutton" role="button">Sign Up</a>
+    <a class="btn btn-success btn-lg" role="button" id="signinbutton">Sign In</a>
+    <div id="signup">
+    <%= render partial: "signup"%>
+    </div>
+    <div id='signin'>
+      <%= render partial: 'signin'%>
+    </div>
   </p>
 </div>
 
-<div id="signup">
-<%= render partial: "signup"%>
-</div>
+
 
 <%= render partial: "signup"%>
 <h3>Login</h3>
