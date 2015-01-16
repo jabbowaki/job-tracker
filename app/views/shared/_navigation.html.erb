@@ -5,7 +5,7 @@
     </div>
     <ul class="nav navbar-nav navbar-right">
       <% if session[:user_id] %>
-        <li><%= link_to 'Logout', session_path(@user), method: :delete %>
+        <li><%= link_to 'Logout', session_path(:id), method: :delete %>
       <% end %>
     </ul>
 
