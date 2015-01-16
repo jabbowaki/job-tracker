@@ -1,7 +1,8 @@
 <h1>Opportunities</h1>
-<%@opportunities.each do |opportunity| %>
-  <%= link_to opportunity.name, opportunity%><br>
-<%end%>
+  <%@opportunities.each do |opportunity| %>
+      <%= link_to opportunity.name, opportunity, class: "list-group-item"%>
+  <%end%>
+\
 
 <%= link_to 'New Opportunity', new_opportunity_path %><br>
 <h1>Upcoming Actions</h1>
