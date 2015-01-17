@@ -3,11 +3,13 @@ class OpportunitiesController < ApplicationController
   def index
     @user = current_user
     @opportunities = @user.opportunities
-    @actions = Action.recent
+    @recent_actions = Action.recent
     @upcoming_actions = Action.upcoming
+
   end
 
   def new
+    @user = current_user
   end
 
   def create
@@ -21,6 +23,7 @@ class OpportunitiesController < ApplicationController
   end
 
   def show
+    @user = current_user
     @opportunity = Opportunity.find(params[:id])
     @actions = @opportunity.actions
     @advocates = @opportunity.advocates
