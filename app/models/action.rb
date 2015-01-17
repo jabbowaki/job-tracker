@@ -7,4 +7,5 @@ class Action < ActiveRecord::Base
 
   scope :recent, -> { order("updated_at desc").limit(5)}
   scope :upcoming, -> { where( " ? < meeting_date", Date.today).limit(5)}
+  scope :past, -> {where(" ? > meeting_date", Date.today).limit(5)}
 end

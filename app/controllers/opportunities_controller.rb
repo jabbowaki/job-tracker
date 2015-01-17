@@ -3,8 +3,9 @@ class OpportunitiesController < ApplicationController
   def index
     @user = current_user
     @opportunities = @user.opportunities
-    @actions = Action.recent
+    @recent_actions = Action.recent
     @upcoming_actions = Action.upcoming
+
   end
 
   def new
