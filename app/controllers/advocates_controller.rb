@@ -20,11 +20,11 @@ class AdvocatesController < ApplicationController
   end
 
   def update
-    @opportinuty = Opportunity.find(params[:opportunity_id])
+    @opportunity = Opportunity.find(params[:opportunity_id])
     @advocate = Advocate.find(params[:id])
     @advocate.attributes = {name: params[:advocate][:name], email: params[:advocate][:email], twitter: params[:advocate][:twitter], blog: params[:advocate][:blog]}
     if @advocate.save
-      redirect_to opportunity_path
+      redirect_to opportunity_path(:id =>@opportunity.id)
     else
       render 'edit'
     end
