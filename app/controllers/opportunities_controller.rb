@@ -24,8 +24,12 @@ class OpportunitiesController < ApplicationController
 
   def show
     @user = current_user
+    if params[:opp_id]
+      @opportunity = Opportunity.find(params[:opportunity_id])
+    else
     #@advocate = Advocate.find(params[:id])
-    @opportunity = Opportunity.find(params[:id])
+      @opportunity = Opportunity.find(params[:id])
+    end
     #@opportunity = Opportunity.find(@advocate.opportunity.id)
     @actions = @opportunity.actions
     @advocates = @opportunity.advocates
