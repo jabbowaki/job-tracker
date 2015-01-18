@@ -39,6 +39,9 @@ gem 'bcrypt', '~> 3.1.7'
 #adding pry because that's my jam
 gem 'pry'
 
+#adding capy for feature testing
+gem 'capybara'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
@@ -52,6 +55,5 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 # Adding pry in here because I know we'll need it
-gem 'pry'
 gem 'rails_12factor', group: :production
 
