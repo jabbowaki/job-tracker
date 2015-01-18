@@ -36,4 +36,14 @@ feature "sign up" do
     expect(page).to have_text('Logout')
   end
 
+  scenario "when user signs up with invalid params" do
+    visit '/'
+    click_on 'Sign Up'
+    fill_in 'First Name', :with => "Ryan"
+    fill_in 'Last Name', :with => 'Gosling'
+    fill_in 'Email', :with => 'ryan@gmail.com'
+    click_on 'Sign Up'
+    expect(page).to_not have_text('Logout')
+  end
+
 end
