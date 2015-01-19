@@ -43,7 +43,7 @@ feature 'new opportunities' do
   end
 end
 
-feature 'new opportunities' do
+feature 'show opportunities' do
   before do
     @user = User.create!(first_name: "test", last_name: "person", email: "test@gmail.com", password: "testing123")
     @opp = Opportunity.create!(user: @user, name: "Burger King", website: "www.burgerking.com", career_page: "www.burgerking.com/jobs")
