@@ -65,4 +65,17 @@ feature 'update advocate' do
     expect(page).to have_content("Edit your advocate!")
   end
 
+  scenario "advocates can be updated" do
+    visit root_path
+    click_on 'Login'
+    fill_in 'email', :with => "test@gmail.com"
+    fill_in 'password', :with => 'testing123'
+    click_on 'Login'
+    click_on 'Burger King'
+    click_on 'Update'
+    fill_in 'Blog', :with => 'www.mickeyds/blog.com'
+    click_on 'Submit'
+    expect(page).to have_content("Ronald McDonald ronald@mcdonalds.com @ronaldmcdonald Blog")
+  end
+
 end
