@@ -1,7 +1,11 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <h3>Coffee Date</h3>
+      <%if session[:user_id]%>
+       <h3 id="header_link"><%= link_to 'Coffee Date', opportunities_path %></h3>
+      <%else%>
+       <h3>Coffee Date</h3>
+      <%end%>
     </div>
     <ul class="nav navbar-nav navbar-right">
       <% if session[:user_id] %>
