@@ -21,8 +21,4 @@ $(document).ready(function(){
     $('#signup').toggle();
     $('#signupbutton').toggle();
   });
-  $('#signinbutton').on('click', function(){
-    $('#signin').toggle();
-    $('#signinbutton').toggle();
-  });
 })
