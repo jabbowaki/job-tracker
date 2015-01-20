@@ -1,8 +1,10 @@
-<%= form_for :session, url: sessions_path do |f| %>
-  <% if @error_message %>
-    <p><%= @error_message%></p>
-  <% end %>
-  <%= f.text_field :email, placeholder: "email" %><br>
-  <%= f.password_field :password, placeholder: "password" %><br>
+<%= form_for :session, :html=>{:class => "form-inline"}, url: sessions_path do |f| %>
+  <%= f.text_field :email, placeholder: "email", class: "form-control" %>
+  <%= f.password_field :password, placeholder: "password", class: "form-control" %>
   <%= f.submit 'Login', class: 'btn btn-success' %>
   <% end %>
+  <div id="navError">
+    <% if @error_message %>
+      <p><%= @error_message%></p>
+    <% end %>
+  </div>
