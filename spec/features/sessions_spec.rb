@@ -7,7 +7,6 @@ feature "signin" do
 
   scenario "when user logs in with valid params" do
     visit '/'
-    click_on 'Login'
     fill_in 'email', :with => "test@gmail.com"
     fill_in 'password', :with => 'testing123'
     click_on 'Login'
@@ -16,11 +15,10 @@ feature "signin" do
 
   scenario "when user logs in with in invalid params" do
     visit '/'
-    click_on 'Login'
     fill_in 'email', :with => "test@gmail.com"
     fill_in 'password', :with => 'testing124'
     click_on 'Login'
-    expect(page).to have_text('Login')
+    expect(page).to have_text('Invalid email or password')
   end
 end
 
