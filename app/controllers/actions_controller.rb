@@ -21,7 +21,7 @@ class ActionsController < ApplicationController
     if @action.save
       redirect_to opportunity_path(@opportunity)
     else
-      render 'new'
+      redirect_to new_opportunity_action_path
     end
   end
 
