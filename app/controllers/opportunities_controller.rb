@@ -3,7 +3,7 @@ class OpportunitiesController < ApplicationController
   def index
     @user = current_user
     @opportunities = @user.opportunities
-    @recent_actions = Action.recent
+    @recent_actions = Action.past
     @upcoming_actions = Action.upcoming
 
   end
