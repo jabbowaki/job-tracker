@@ -73,4 +73,13 @@ feature 'view actions' do
     click_on 'Login'
     expect(page).to have_content("Recent Activity Phone Interview on 2014-12-10" )
   end
+
+  scenario 'upcoming actions show in upcoming actions bit' do
+    visit root_path
+    click_on 'Login'
+    fill_in 'email', :with => "test@gmail.com"
+    fill_in 'password', :with => 'testing123'
+    click_on 'Login'
+    expect(page).to have_content("What's Next Informational Interview")
+  end
 end
