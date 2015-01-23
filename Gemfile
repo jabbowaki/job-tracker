@@ -42,6 +42,8 @@ gem 'pry'
 #adding capy for feature testing
 gem 'capybara'
 
+gem 'faker'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end

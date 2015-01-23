@@ -51,6 +51,7 @@ feature 'view actions' do
     @opp = Opportunity.create!(user: @user, name: "Burger King", website: "www.burgerking.com", career_page: "www.burgerking.com/jobs")
     @advocate = Advocate.create!(name: "Ronald McDonald", email: "ronald@mcdonalds.com", twitter: "@ronaldmcdonald", opportunity: @opp)
     @action = Action.create!(description: "Phone Interview", opportunity: @opp, advocate: @advocate, meeting_date: "2014-12-10")
+    @action2 = Action.create!(description: "Informational Interview", opportunity: @opp, advocate: @advocate, meeting_date: Faker::Date.forward(23))
 
 
   end
@@ -71,5 +72,14 @@ feature 'view actions' do
     fill_in 'password', :with => 'testing123'
     click_on 'Login'
     expect(page).to have_content("Recent Activity Phone Interview on 2014-12-10" )
+  end
+
+  scenario 'upcoming actions show in upcoming actions bit' do
+    visit root_path
+    click_on 'Login'
+    fill_in 'email', :with => "test@gmail.com"
+    fill_in 'password', :with => 'testing123'
+    click_on 'Login'
+    expect(page).to have_content("What's Next Informational Interview")
   end
 end
