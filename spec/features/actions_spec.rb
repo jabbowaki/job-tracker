@@ -51,6 +51,7 @@ feature 'view actions' do
     @opp = Opportunity.create!(user: @user, name: "Burger King", website: "www.burgerking.com", career_page: "www.burgerking.com/jobs")
     @advocate = Advocate.create!(name: "Ronald McDonald", email: "ronald@mcdonalds.com", twitter: "@ronaldmcdonald", opportunity: @opp)
     @action = Action.create!(description: "Phone Interview", opportunity: @opp, advocate: @advocate, meeting_date: "2014-12-10")
+    @action2 = Action.create!(description: "Informational Interview", opportunity: @opp, advocate: @advocate, meeting_date: Faker::Date.forward(23))
 
 
   end
