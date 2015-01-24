@@ -8,7 +8,7 @@ class UsersController < ApplicationController
       redirect_to opportunities_path
     else
       flash.now[:error] = "Could not signup.  Please fill in all fields"
-      render 'welcome/index'
+      redirect_to root_path
     end
   end
 
