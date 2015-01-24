@@ -1,9 +1,9 @@
-<%= form_for :user, url: users_path do |f| %>
+<%= form_for :user,:html=>{:class => "form-inline"}, url: users_path do |f| %>
 <%= flash[:error] %>
 <br>
-<%= f.text_field :first_name, placeholder: "First Name" %><br>
-<%= f.text_field :last_name, placeholder: "Last Name" %><br>
-<%= f.email_field :email, placeholder: "Email" %><br>
-<%= f.password_field :password, placeholder: "Password" %><br>
+<%= f.text_field :first_name, placeholder: "First Name", class: "form-control"%>
+<%= f.text_field :last_name, placeholder: "Last Name", class: "form-control" %>
+<%= f.email_field :email, placeholder: "Email", class: "form-control" %>
+<%= f.password_field :password, placeholder: "Password", class: "form-control" %>
 <%= f.submit 'Sign Up', class: 'btn btn-success'%>
 <% end %>
