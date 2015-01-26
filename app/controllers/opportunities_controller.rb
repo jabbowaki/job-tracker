@@ -41,7 +41,6 @@ class OpportunitiesController < ApplicationController
 
   def update
     @opportunity = Opportunity.find(params[:id])
-    binding.pry
     @opportunity.attributes = {name: params[:opportunity][:name], website: params[:opportunity][:website], career_page: params[:opportunity][:career_page], notes: params[:opportunity][:notes]}
     if @opportunity.save
       redirect_to opportunity_path
