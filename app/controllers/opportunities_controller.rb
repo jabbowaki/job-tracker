@@ -35,6 +35,22 @@ class OpportunitiesController < ApplicationController
     @advocates = @opportunity.advocates
   end
 
+  def edit
+    @opportunity = Opportunity.find(params[:id])
+  end
+
+  def update
+    @opportunity = Opportunity.find(params[:id])
+    binding.pry
+    @opportunity.attributes = {name: params[:opportunity][:name], website: params[:opportunity][:website], career_page: params[:opportunity][:career_page], notes: params[:opportunity][:notes]}
+    if @opportunity.save
+      redirect_to opportunity_path
+    else
+      render 'opportunities/edit'
+    end
+
+  end
+
   private
 
     def opportunity_params
