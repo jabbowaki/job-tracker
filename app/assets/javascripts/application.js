@@ -21,4 +21,9 @@ $(document).ready(function(){
     $('#signup').toggle();
     $('#signupbutton').toggle();
   });
+  //experiencing werid bug with this - ignores preventDefault unless refreshed
+  // $('#oppEditBtn').on('click', function(){
+  //   // event.preventDefault();
+  //   $('#oppEdit').toggle();
+  // });
 })

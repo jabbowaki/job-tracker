@@ -5,6 +5,14 @@ Site: <%= link_to @opportunity.website %>
 Job Site: <%= link_to @opportunity.career_page %>
 <br>
 Notes: <%=@opportunity.notes%>
+<br>
+
+<%= button_to "Edit", edit_opportunity_path(@opportunity), :method => "get", id: "oppEditBtn", class: 'btn btn-success' %>
+
+<div id="oppEdit">
+  <%= render partial: 'opportunities/edit' %>
+</div>
+
 
 <h1>Advocates</h1>
 <% @advocates.each do |advocate| %>

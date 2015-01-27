@@ -1,0 +1,13 @@
+<%= form_for :opportunity, url: opportunity_path(@opportunity), method: :put do |f| %>
+<div class="form-group">
+  <%= f.label :name %>
+  <%= f.text_field :name, placeholder: "Name", class: 'form-control' %>
+  <%= f.label :website%>
+  <%= f.text_field :website, placeholder: "Website", class: 'form-control'%>
+  <%= f.label :career_page %>
+  <%= f.text_field :career_page, placeholder: "Career Page", class: 'form-control'%>
+  <%= f.label :notes %>
+  <%= f.text_field :notes, placeholder: "Notes", class: 'form-control' %>
+  <%= f.submit "Submit", class: 'btn btn-success' %>
+<% end %>
+</div>
