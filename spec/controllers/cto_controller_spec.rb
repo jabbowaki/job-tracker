@@ -12,9 +12,17 @@ describe CtosController do
   end
 
   describe 'POST #create' do
-    it 'assigns @opportunity to a specific opp'
+    it 'assigns @opportunity to a specific opp' do
+      get :new, { opportunity_id: opp.to_param }
+      expect(assigns(:opportunity)).to eq(opp)
+    end
 
-    it 'assigns @cto a new, unsaved cto'
+    it 'assigns @cto a new, unsaved cto' #do
+      # cto_params = {cto: {name: "John Doe", email: "john@gmail.com"}}
+      # post :create, cto_params
+      # expect(assigns(:cto)).to eq(cto)
+    # end
+
     it 'saved cto when passed valid params'
     it 'fails to save cto when passed invalid params'
     it 'renders new if cto is not saved'
