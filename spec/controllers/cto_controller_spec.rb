@@ -5,10 +5,10 @@ describe CtosController do
   let!(:opp) {Opportunity.create!(user: user, name: "Average company", website: "www.average.com")}
 
   describe 'GET #new' do
-    it 'assigns @opportunity to specific opportunity' #do
-    #   get :new, { opportunity_id: opp.to_param }
-    #   expect(assigns(:opportunity)).to equal(opp)
-    # end
+    it 'assigns @opportunity to specific opportunity' do
+      get :new, { opportunity_id: opp.to_param }
+      expect(assigns(:opportunity)).to eq(opp)
+    end
   end
 
   describe 'POST #create' do
