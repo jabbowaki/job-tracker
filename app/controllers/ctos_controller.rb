@@ -1,7 +1,6 @@
 class CtosController < ApplicationController
   def new
     @opportunity = Opportunity.find(params[:opportunity_id])
-    @cto = Cto.new
   end
 
   def create
