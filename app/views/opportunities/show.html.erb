@@ -6,6 +6,10 @@ Job Site: <%= link_to @opportunity.career_page %>
 <br>
 Notes: <%=@opportunity.notes%>
 <br>
+<% if @cto == nil %>
+  <%= link_to 'Add Cto', new_opportunity_cto_path(@opportunity) %>
+<% else %>
+<% end %>
 
 <%= button_to "Edit", edit_opportunity_path(@opportunity), :method => "get", id: "oppEditBtn", class: 'btn btn-success' %>
 

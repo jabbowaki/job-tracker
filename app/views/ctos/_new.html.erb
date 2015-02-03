@@ -1,0 +1,6 @@
+<%= form_for :cto, url: opportunity_ctos_path(@opportunity) do |f| %>
+  <%= f.text_field :name, placeholder: 'Name' %>
+  <%= f.text_field :email, placeholder: "Email" %>
+  <%= f.text_field :twitter, placeholder: "Twitter" %>
+  <%= f.text_field :blog, placeholder: "Blog" %>
+<% end %>
