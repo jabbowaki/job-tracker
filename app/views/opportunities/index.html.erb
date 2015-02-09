@@ -15,8 +15,18 @@
   <div class = "row">
     <div class = "col-lg-1"></div>
     <div class = "col-lg-3">
-    <%= link_to opportunity.name, opportunity%>
-  </div>
+      <%= link_to opportunity.name, opportunity%>
+    </div>
+    <div class = "col-lg-4">
+      <% if opportunity.actions.last %>
+        <%= opportunity.actions.last.description %>
+      <% end %>
+    </div>
+    <div class = "col-lg-3">
+      <% if opportunity.actions.last %>
+        <%= opportunity.actions.last.created_at %>
+      <% end %>
+    </div>
   </div>
 <%end%>
 <br>
