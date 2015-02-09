@@ -1,5 +1,5 @@
-<div class="row">
-  <div class="col-lg-2"></div>
+<div class="row" >
+  <div class="col-lg-1"></div>
   <div class="col-lg-3">
     <span id="opp-header">Opportunities</span>
   </div>
@@ -10,9 +10,13 @@
      <span id="on-date">On Date</span>
   </div>
 </div>
+
 <%@opportunities.each do |opportunity| %>
-  <div class="row">
+  <div class = "row">
+    <div class = "col-lg-1"></div>
+    <div class = "col-lg-3">
     <%= link_to opportunity.name, opportunity%>
+  </div>
   </div>
 <%end%>
 <br>
