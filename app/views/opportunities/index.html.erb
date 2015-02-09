@@ -1,9 +1,21 @@
-
-<span id="opp-header">Opportunities</span> <span id="last-activity">Last Activity</span> <span id="on-date">On Date</span>
+<div class="row">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-3">
+    <span id="opp-header">Opportunities</span>
+  </div>
+  <div class="col-lg-4">
+    <span id="last-activity">Last Activity</span>
+  </div>
+  <div class="col-lg-3">
+     <span id="on-date">On Date</span>
+  </div>
+</div>
 <%@opportunities.each do |opportunity| %>
-    <%= link_to opportunity.name, opportunity, class: "list-group-item"%>
+  <div class="row">
+    <%= link_to opportunity.name, opportunity%>
+  </div>
 <%end%>
-
+<br>
 
 <%= link_to 'Add Opportunity', new_opportunity_path, class: 'btn btn-warning' %><br>
 <h1>What's Next</h1>
