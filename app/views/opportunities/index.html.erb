@@ -1,11 +1,47 @@
-<h1>Opportunities</h1>
-  <%@opportunities.each do |opportunity| %>
-      <%= link_to opportunity.name, opportunity, class: "list-group-item"%>
-  <%end%>
+<div class="row" >
+  <div class="col-lg-1"></div>
+  <div class="col-lg-3">
+    <span id="opp-header">Opportunities</span>
+  </div>
+  <div class="col-lg-4">
+    <span id="last-activity">Last Activity</span>
+  </div>
+  <div class="col-lg-3">
+     <span id="on-date">On Date</span>
+  </div>
+</div>
 
+<%@opportunities.each do |opportunity| %>
+  <div class = "row">
+    <div class = "col-lg-1"></div>
+    <div class = "col-lg-3">
+      <%= link_to opportunity.name, opportunity%>
+    </div>
+    <div class = "col-lg-4">
+      <% if opportunity.actions.last %>
+        <%= opportunity.actions.last.description %>
+      <% end %>
+    </div>
+    <div class = "col-lg-3">
+      <% if opportunity.actions.last %>
+        <%= opportunity.actions.last.created_at %>
+      <% end %>
+    </div>
+  </div>
+<%end%>
 
-<%= link_to 'New Opportunity', new_opportunity_path, class: 'btn btn-warning' %><br>
-<h1>What's Next</h1>
+<div class="row">
+  <div class="col-lg-1"></div>
+  <%= link_to 'Add Opportunity', new_opportunity_path, class: 'btn btn-warning' %>
+</div>
+
+<div class="row">
+  <div class ="col-lg-1"></div>
+  <div class="col-lg-2">
+    <h1>What's Next</h1>
+  </div>
+</div>
+
 <% @upcoming_actions.each do |action| %>
   <% if action.opportunity.user == @user %>
     <%= action.description %>
