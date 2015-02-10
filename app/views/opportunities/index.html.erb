@@ -16,7 +16,7 @@
 </table>
 
 
-<%= link_to 'New Opportunity', new_opportunity_path, class: 'btn btn-warning' %><br>
+<%= link_to 'Add Opportunity', new_opportunity_path, class: 'btn btn-warning' %><br>
 <h1>What's Next</h1>
 <% @upcoming_actions.each do |action| %>
   <% if action.opportunity.user == @user %>

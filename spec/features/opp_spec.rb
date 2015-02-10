@@ -11,8 +11,8 @@ feature 'new opportunities' do
     fill_in 'email', :with => "test@gmail.com"
     fill_in 'password', :with => 'testing123'
     click_on 'Login'
-    click_on 'New Opportunity'
-    expect(page).to have_text("New Opportunity")
+    click_on 'Add Opportunity'
+    expect(page).to have_text("Add Opportunity")
   end
 
   scenario 'user can make a new opportunity' do
@@ -21,7 +21,7 @@ feature 'new opportunities' do
     fill_in 'email', :with => "test@gmail.com"
     fill_in 'password', :with => 'testing123'
     click_on 'Login'
-    click_on 'New Opportunity'
+    click_on 'Add Opportunity'
     fill_in 'Name', :with => "Burger King"
     fill_in 'Website', :with => "www.burgerking.com"
     fill_in 'Career Page', :with => "www.burgerking.com/jobs"
@@ -36,7 +36,7 @@ feature 'new opportunities' do
     fill_in 'email', :with => "test@gmail.com"
     fill_in 'password', :with => 'testing123'
     click_on 'Login'
-    click_on 'New Opportunity'
+    click_on 'Add Opportunity'
     fill_in 'Website', :with => "www.burgerking.com"
     fill_in 'Career Page', :with => "www.burgerking.com/jobs"
     expect(page).to_not have_content("Burger King")
