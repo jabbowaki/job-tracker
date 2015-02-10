@@ -12,7 +12,7 @@ feature 'new opportunities' do
     fill_in 'password', :with => 'testing123'
     click_on 'Login'
     click_on 'Add Opportunity'
-    expect(page).to have_text("Add Opportunity")
+    expect(page).to have_text("New Opportunity")
   end
 
   scenario 'user can make a new opportunity' do
