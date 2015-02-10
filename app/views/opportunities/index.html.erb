@@ -1,18 +1,22 @@
 <table class="table table-hover">
-  <tr>
-    <th>Opportunities</th>
-    <th>Last Actitivy</th>
-    <th>On Date</th>
-  </tr>
-  <tr>
-    <%@opportunities.each do |opportunity| %>
-      <td><%= link_to opportunity.name, opportunity, class: "list-group-item"%></td>
+  <thead>
+    <tr>
+      <th>Opportunities</th>
+      <th>Last Actitivy</th>
+      <th>On Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <%@opportunities.each do |opportunity| %>
+        <td><%= link_to opportunity.name, opportunity %></td>
       <% if opportunity.actions.last %>
         <td><%= opportunity.actions.last.description %></td>
         <td><%= opportunity.actions.last.created_at %></td>
       <% end %>
   </tr>
-  <%end%>
+    <%end%>
+  </tbody>
 </table>
 
 
