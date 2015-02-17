@@ -1,10 +1,26 @@
-<h1>Opportunities</h1>
-  <%@opportunities.each do |opportunity| %>
-      <%= link_to opportunity.name, opportunity, class: "list-group-item"%>
-  <%end%>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Opportunities</th>
+      <th>Last Actitivy</th>
+      <th>On Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <%@opportunities.each do |opportunity| %>
+        <td><%= link_to opportunity.name, opportunity %></td>
+      <% if opportunity.actions.last %>
+        <td><%= opportunity.actions.last.description %></td>
+        <td><%= opportunity.actions.last.created_at %></td>
+      <% end %>
+  </tr>
+    <%end%>
+  </tbody>
+</table>
 
 
-<%= link_to 'New Opportunity', new_opportunity_path, class: 'btn btn-warning' %><br>
+<%= link_to 'Add Opportunity', new_opportunity_path, class: 'btn btn-warning' %><br>
 <h1>What's Next</h1>
 <% @upcoming_actions.each do |action| %>
   <% if action.opportunity.user == @user %>
